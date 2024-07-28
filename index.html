@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Defenders of Pixelaria</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div id="intro-screen">
+        <div class="buttons">
+          <img id="start-button-img" src="Images/buttons/start-button-png.png" />
+          <img id="instructions-button" src="Images/buttons/instructions-button.png" />
+        </div>
+        <div id="title">
+          <img id="defenders-text" src="Images/defenders-no-background.png" />
+          <br />
+          <img
+            id="instructions"
+            style="display: none"
+            src="Images/instructions-no-background.png"
+          />
+        </div>
+      </div>
+
+      <!-- separation -->
+      <!-- separation -->
+
+      <div id="game-screen" style="display: none">
+        <audio id="medieval-music" loop controls src="/sounds/medieval-music.mp3"></audio>
+        <div class="new-level-messages" id="enter-the-dungeon">YOU HAVE ENTERED THE DUNGEON</div>
+        <div class="new-level-messages" id="enter-the-riverlands">YOU HAVE ENTERED THE RIVERLANDS</div>
+        <div class="level-counter" id="level-counter-id"></div>
+        <div class="player-lives-counter" id="player-lives-counter-id"></div>
+        <div class="enemy-card-inventory" id="enemy-card-holder"></div>
+        <div class="enemy-defeat-counter"></div>
+        <div class="player-attack-img"  id="player-attack-img-div"></div>
+        <div class="card-inventory" id="card-holder"></div>
+        
+      </div>
+
+      <!-- card screens to access on event-listener-->
+      <!-- card screens to access on event-listener-->
+
+     <!--  <div id="mage-screen">
+        <h2 class="summon-text">YOU SUMMONED THE MAGE</h2>
+        <img id="mage-screen-img" src="images/Designer(12).jpeg" />
+      </div>
+      <div id="knight-screen">
+        <h2 class="summon-text">YOU SUMMONED THE KNIGHT</h2>
+        <img id="knight-screen-img" src="images\pixel-knight-in-action.jpg" />
+      </div>
+      <div id="ogre-screen">
+        <h2 class="summon-text">YOU SUMMONED THE OGRE</h2>
+        <img src="images/Designer(11).jpeg" id="ogre-screen-img" />
+      </div> -->
+      <!--  game end and restart -->
+      <!--  game end and restart -->
+      <!--  game end and restart -->
+      <div id="win-game-screen" class="end-game-screen">
+        <h1>YOU WIN!</h1>
+        <button id="restart-button">RESTART GAME</button>
+      </div>
+      <div id="end-game-screen" class="end-game-screen"> 
+        <h1>YOU LOSE!</h1>
+        <!-- <button id="restart-button">RESTART GAME</button> -->
+    </main>
+
+    <script src="cards.js"></script>
+    <script src="enemy-cards.js"></script>
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
